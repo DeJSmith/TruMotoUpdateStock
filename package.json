@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Creates csv file to update shopify stock",
   "main": "index.js",
+  "engines": {
+    "node": "14.15.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -24,9 +27,9 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
     ],
     "development": [
       "last 1 chrome version",
