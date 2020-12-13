@@ -16,9 +16,6 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.5.3",
-    "csv-parser": "^3.0.0",
-    "json-2-csv": "^3.8.0",
-    "json2csv": "^5.0.5",
     "node-sass": "^4.14.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
