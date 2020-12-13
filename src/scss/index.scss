@@ -1,0 +1,62 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+@media only screen and (max-width: 600px) {
+  .my-container {
+    padding: 200px 20px !important;
+  }
+}
+
+.my-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 150px;
+}
+
+.logo {
+  max-width: 300px;
+  height: auto;
+}
+
+.form-container {
+  -webkit-box-shadow: 5px 5px 16px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 16px 5px rgba(0, 0, 0, 0.3);
+  padding: 80px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #ff671d;
+  border-color: #ff671d;
+  transition: all ease-in-out 0.3s;
+  -webkit-box-shadow: 5px 5px 16px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 16px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: #e4804e;
+  border-color: #e4804e;
+  transform: scale(0.97);
+}
+
+.btn-primary:active {
+  background-color: #e4804e;
+  border-color: #e4804e;
+}
+
+.hidden {
+  display: none;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  background-color: #dd916b;
+  border-color: #dd916b;
+}
