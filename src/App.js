@@ -44,7 +44,7 @@ const App = () => {
       reader.onloadend = () => {
         var data = reader.result;
         var json = convertToJson(data.toString().split("\n"));
-        //console.log(json);
+        console.log(json);
 
         resolve(json);
       };
@@ -112,9 +112,10 @@ const App = () => {
   };
 
   const convertToCSV = async (data) => {
+    console.log(data);
     let csv = data.map((row) => Object.values(row));
     csv.unshift(Object.keys(data[0]));
-    return `"${csv.join('"\n"').replace(/,/g, '","')}"`;
+    return `${csv.join("\n").replace(/,/g, ",")}`;
   };
 
   const createBlob = (csv) => {
