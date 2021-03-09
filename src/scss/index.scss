@@ -22,7 +22,7 @@
 .form-container {
   -webkit-box-shadow: 5px 5px 16px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 5px 5px 16px 5px rgba(0, 0, 0, 0.3);
-  padding: 80px 20px;
+  padding: 40px 20px;
   margin-top: 20px;
   border-radius: 5px;
 }
@@ -59,4 +59,26 @@
 .btn-primary:disabled {
   background-color: #dd916b;
   border-color: #dd916b;
+}
+
+.my-nav {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  z-index: 1;
+
+  background: transparent;
+
+  > div {
+    background-color: #ff671d;
+    clip-path: polygon(55% 0, 100% 1%, 100% 100%, 40% 100%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+.shadow {
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
 }
